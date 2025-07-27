@@ -1,0 +1,5 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>Profil Sayfası</h2>
+<p>Hoş geldin, giriş yaptın.</p>
+{% endblock %}

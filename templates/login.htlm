@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>Giriş Yap</h2>
+<form method="POST">
+    <input type="email" name="email" placeholder="E-posta" required><br><br>
+    <input type="submit" value="Giriş Yap">
+</form>
+{% endblock %}
