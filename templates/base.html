@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Site{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Menü</h2>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Anasayfa</a></li>
+            <li><a href="{{ url_for('profile') }}">Profil</a></li>
+            <li><a href="{{ url_for('about') }}">Hakkında</a></li>
+            {% if session.get('user') %}
+            <li><a href="{{ url_for('logout') }}">Çıkış</a></li>
+            {% else %}
+            <li><a href="{{ url_for('login') }}">Giriş</a></li>
+            {% endif %}
+        </ul>
+    </div>
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

@@ -1,5 +1,6 @@
-{% extends "layout.html" %}
+{% extends "base.html" %}
+{% block title %}Profil{% endblock %}
 {% block content %}
-<h2>Profil</h2>
-<p>Merhaba, {{ session['email'] }}</p>
+<h1>Profil Sayfası</h1>
+<p>Merhaba {{ user }}!</p>
 {% endblock %}
