@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Benim Sitem</title>
+</head>
+<body>
+  <h1>Hoş Geldin!</h1>
+  <p>Bu site Termux + Flask + GitHub + Render ile yayında!</p>
+</body>
+</html>
